@@ -1,0 +1,149 @@
+:root {
+    /* text color*/
+    --text-clr-primary:#555555;
+    --text-clr-title: #303030;
+    --text-clr-white: #FFFFFF;
+    --text-clr-accent: #FF6C00;
+    --text-clr-table: #9DA4BD;
+    /* background color*/
+    --bg-hero-clr: #E5E5E5;
+    --bg-main-clr: #FFFFFF;
+    --bg-team-clr: #F7F7F7;
+    --bg-footer-clr: #191C26;
+    --bg-footer-second-clr: #F7F7F7;
+    /* effects */
+    --clr-accent: #FF6C00;
+    --clr-icon-non-act: #303030;
+    /* decorations */
+    /* fonts: 
+    - Open Sans 400, 600
+    - Raleway 400, 700*/
+}
+
+.page {
+    margin: 0 0;
+
+    color: var(--text-clr-primary);
+    background-color: var(--bg-main-clr);
+    font-family: 'Open Sans', sans-serif, 'Raleway', 
+                    sans-serif, 'Roboto', sans-serif;
+
+    letter-spacing: 0.02em;
+}
+
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:link,
+.link:visited {
+    color: #191C26;
+}
+
+/* Header */
+
+.page-header {
+    display: flex;
+    align-items: center;
+    padding-top: 48px;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+
+    color: var(--text-clr-title);
+}
+
+/* Logo */
+
+.link-logo {
+    display: inline-flex;
+    width: 66px;
+    height: 55px;
+    margin-right: 70px;
+}
+
+/* Site navigation */
+
+.site-nav {
+    display: flex;
+}
+
+.nav-item:hover .link,
+.nav-item:focus .link {
+    color: var(--text-clr-accent);
+    transition: color 500ms linear;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+/* Site contacts */
+
+.site-cont {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.cont-item:not(:last-child) {
+    margin-right: 60px;
+}
+
+.cont-item:hover .link,
+.cont-item:focus .link {
+    color: var(--text-clr-accent);
+    transition: color 500ms linear;
+}
+
+.cont-item .link-btn {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.cont-item.btn {
+    width: 160px;
+    height: 40px;
+
+    border: 1px solid var(--clr-accent);
+    border-radius: 25px;
+}
+
+/* Sidebar */
+
+.page-aside {
+    display: flex;
+}
+
+.soc-aside {
+    display: flex;
+}
+
+.soc-item:not(:last-child) {
+    margin-right: 40px;
+}

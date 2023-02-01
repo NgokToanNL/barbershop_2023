@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Barbershop Kyiv</title>
 </head>
-<body>
+<body class="page">
     <!-- Header -->
-    <header class="page-header">
+    <header class="page-header container">
         <!-- Logo -->
-        <a href="./main.html" class="logo">Galery Store and More</a>
+        <a href="./main.html" class="link-logo">
+            <svg class="logo">
+                <use href="./svg/symbol-defs.svg#icon-logo"></use>
+            </svg>
+        </a>
         <!-- Navigation -->
         <nav class="site-nav">
             <ul class="site-nav list">
@@ -34,25 +47,28 @@
                 <li class="cont-item">
                     <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
                 </li>
-                <li class="cont-item">
-                    <a href="" class="link-btn">онлайн-запись</a>
+                <li class="cont-item btn">
+                    <a href="" class="link-btn link">онлайн-запись</a>
                 </li>
             </ul>
         </div>
     </header>
-    <main class="page-main">
+    <!-- Sidebar -->
+    <aside class="page-aside container">
+        <div class="soc-aside">
+            <ul class="soc-aside list">
+                <li class="soc-item">
+                    <a href="" class="soc-link">Instagram</a>
+                </li>
+                <li class="soc-item">
+                        <a href="" class="soc-link">Youtube</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main class="page-main container">
         <!-- Section Hero -->
         <section class="page-hero">
-            <div class="soc-hero">
-                <ul class="soc-hero">
-                    <li class="soc-item">
-                        <a href="" class="soc-link">Instagram</a>
-                    </li>
-                    <li class="soc-item">
-                        <a href="" class="soc-link">Youtube</a>
-                    </li>
-                </ul>
-            </div>
             <div class="hero">
                 <h1 class="title hero">A hair salon for men in Kyiv</h1>
                 <h2 class="big-title hero">BarberShop</h2>
@@ -79,13 +95,13 @@
         <section class="prices">
             <h1>Проведи время в компании лучших мастеров</h1>
             <h2>Услуги и цены</h2>
-            <ul>
+            <ul class="list">
                 <li>Мужская стрижка</li>
                 <li>Стрижка бороды</li>
                 <li>Стрижка усов</li>
                 <li>Бритье опасной бритвой</li>
             </ul>
-            <ul>
+            <ul class="list">
                 <li>Cтрижка у стажера</li>
                 <li>Стрижка под насадку</li>
                 <li>Детская стрижка (до 12 лет)</li>
@@ -96,7 +112,7 @@
         <!-- Secion Benefits -->
         <section class="benefits">
             <div>
-                <ul>
+                <ul class="list">
                     <li>
                         <h3>600</h3>
                         <p>Довольных клиентов в день/p>
@@ -125,7 +141,7 @@
         <section class="team">
             <h1>для настоящих ценителей атмосферы</h1>
             <h2>Наши мастера</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="" alt="">
                     <div>
@@ -133,7 +149,7 @@
                         <p>Extreme Barber</p>
                     </div>
                     <div>
-                        <ul>
+                        <ul class="list">
                             <li>Instagram</li>
                             <li>Twitter</li>
                             <li>Facebook</li>
@@ -148,7 +164,7 @@
                         <p>Extreme Barber</p>
                     </div>
                     <div>
-                        <ul>
+                        <ul class="list">
                             <li>Instagram</li>
                             <li>Twitter</li>
                             <li>Facebook</li>
@@ -163,7 +179,7 @@
                         <p>Extreme Barber</p>
                     </div>
                     <div>
-                        <ul>
+                        <ul class="list">
                             <li>Instagram</li>
                             <li>Twitter</li>
                             <li>Facebook</li>
@@ -176,7 +192,7 @@
         <!-- Section Photos -->
         <section>
             <div>
-                <ul>
+                <ul class="list">
                     <li>
                         <img src="" alt="">
                     </li>
@@ -194,11 +210,11 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="page-footer container">
         <div class="footer-regist"></div>
         <div class="footer-cont"></div>
         <div class="footer-soc">
-            <ul>
+            <ul class="list">
                 <li>Instagram</li>
                 <li>Youtube</li>
             </ul>
